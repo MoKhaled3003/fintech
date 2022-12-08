@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 export async function mongodb() {
   try {
-    await mongoose.connect('mongodb://localhost:27017/fintech');
+    await mongoose.connect(process.env.MONGOURI);
   } catch (error) {
 
   }

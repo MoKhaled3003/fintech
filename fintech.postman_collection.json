@@ -1,0 +1,270 @@
+{
+	"info": {
+		"_postman_id": "8aeba5d4-e7e3-493e-b1f2-cd6a63052f66",
+		"name": "fintech",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8252001"
+	},
+	"item": [
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"mohamedaaddda.khaled@gmail.com\",\n    \"roles\": \"6390b69ad8d9579264b48f22\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/rest/v0/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest",
+								"v0",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"63918b1110258b48d3248ccc\",\n    \"email\": \"mohamedaadxxdda.khaled@gmail.com\",\n    \"roles\": \"6390b69ad8d9579264b48f22\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/rest/v0/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest",
+								"v0",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/rest/v0/user?email=mohamed.khaled@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest",
+								"v0",
+								"user"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "mohamed.khaled@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user?email=mohamed@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "mohamed@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "collection",
+			"item": [
+				{
+					"name": "create collection",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"mohamed@g.com\",\n    \"roles\": \"manager\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"_id\": \"6390b71d44c33775e356c0f1\",\n    \"email\": \"mohamed@gmail.com\",\n    \"roles\": \"6390b69ad8d9579264b48f22\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im1vaGFtZWRhYWRkZGEua2hhbGVkQGdtYWlsLmNvbSIsInJvbGUiOiI2MzkwYjY5YWQ4ZDk1NzkyNjRiNDhmMjIiLCJpYXQiOjE2NzA1MDY4NTl9.NsX5dcf6Xqya0Z3QZBA2o4VXybjpxCtBVOaZ2M23klY",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8080/rest/v0/collection?id=6391f46f52c44feb6519238f",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"rest",
+								"v0",
+								"collection"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "6391f46f52c44feb6519238f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete user",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/user?email=mohamed@gmail.com",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							],
+							"query": [
+								{
+									"key": "email",
+									"value": "mohamed@gmail.com"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "groups",
+			"item": [
+				{
+					"name": "create group",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"mohamed@g.com\",\n    \"roles\": \"manager\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/user",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"user"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

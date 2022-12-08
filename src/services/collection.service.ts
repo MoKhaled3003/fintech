@@ -8,8 +8,9 @@ export class CollectionService {
   }
 
   async getCollection(id: string) {
-    return await Collection.findOne({
-      _id: id,
+      console.log(id)
+    return await Collection.findById({
+      _id: id.trim(),
     });
   }
 

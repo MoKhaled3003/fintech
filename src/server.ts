@@ -17,6 +17,7 @@ import { UserController } from "./controllers/user.controller";
   },
   middlewares: [
     "json-parser",
+    "text-parser"
   ]
 })
 export class Server {

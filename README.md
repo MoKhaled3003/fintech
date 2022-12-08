@@ -22,14 +22,7 @@ $ npm run start
 $ npm install
 $ npm run start:dev
 ```
-- import etheremApis to postman file name "fintech.postman_collection.json"
-- use query params to add up to 100 addreses
+- import fintech Apis to postman file name "fintech.postman_collection.json"
 
-## Unit Tests
-
-```bash
-# test mode
-$ npm run test
-```
 ## Stay in touch
 - Author - [Mohamad Khaled](https://www.linkedin.com/in/engmokhaled/)
